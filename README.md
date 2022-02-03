@@ -14,6 +14,12 @@ root             (Project root folder)
     --director.py
     --words.py
     --GameState.py
-    --jumper.py
-       
+    --jumper.py       
 README.md        (General info)
+
+## Authors 
+* Beatriz Sandoval
+* Canon Jensen
+* Christian Vargas
+* Samuel Gallew
+* Luis Lamas
