@@ -21,5 +21,5 @@ README.md        (General info)
 * Beatriz Sandoval
 * Canon Jensen
 * Christian Vargas
-* Samuel Gallew
+* Samuel Gallew (sdancing971@gmail.com)
 * Luis Lamas
