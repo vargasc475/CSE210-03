@@ -1,10 +1,14 @@
+from itertools import count
 from game.jumper import Jumper 
+from game.words import Words
 
 class Director:
 
     def __init__(self):
 
         self._jumper = Jumper()
+        self._words = Words()
+        self._words.make_word()
         # self.is_playing = True
 
     def start_game(self):
@@ -14,16 +18,28 @@ class Director:
             self (Director): an instance of Director.
         """
         # while self.is_playing:
+        
         self.get_inputs()
         self.do_updates()
         self.do_outputs()
 
     def get_inputs(self):
-        pass
+        '''while waiting for Cannon, 
+        Attribute (guess): letter to prove the panel.'''
+        self.guess = "p"
        
     def do_updates(self):
-        pass
+        '''Update the panel with the guessed letter'''
+        z = -1
+        found = False
+        for i in self._words.word:
+            z += 1
+            if self.guess == self._words.word[z]:
+                self._words.result[z] = self.guess
+                found = True
+           
 
     def do_outputs(self):
-        self._jumper.make_panel() 
+        self._jumper.make_panel(self._words.result) 
+        
 

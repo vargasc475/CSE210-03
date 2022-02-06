@@ -10,4 +10,4 @@ class Words:
         self.word = list(random.choice(self._word_list))
         for i in range(len(self.word)):
             self.result.append("_")
-        return self.result, self.word
+        

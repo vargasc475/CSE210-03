@@ -6,7 +6,8 @@ class Jumper:
         self.word = Words()
         self.word.make_word()
 
-    def make_panel(self):
-        for self._panel in self.word.result:
+    def make_panel(self, word):
+        '''Make the panel'''
+        for self._panel in word:
             print(self._panel, end=' ')
         
