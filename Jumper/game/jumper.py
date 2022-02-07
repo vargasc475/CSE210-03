@@ -9,5 +9,6 @@ class Jumper:
     def make_panel(self, word):
         '''Make the panel'''
         for self._panel in word:
-            print(self._panel, end=' ')
+            print(self._panel, end=' ')            
+
         
