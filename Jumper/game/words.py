@@ -11,3 +11,4 @@ class words:
         for i in range(len(self.word)):
             self.result.append("_")
         return self.result
+   
