@@ -23,7 +23,6 @@ class Jumper:
             jumpster += f"{panel} "
         for i in self.health:
             jumpster += i
-        print('CLue: Latin american countries...')
         print(jumpster)
     
     def take_damage(self):

@@ -20,6 +20,7 @@ class Director:
         Args:
             self (Director): an instance of Director.
         """
+        print('CLue: Latin american countries...')
         self.do_outputs()
         while self.is_playing:
         
