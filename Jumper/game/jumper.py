@@ -23,7 +23,9 @@ class Jumper:
             jumpster += f"{panel} "
         for i in self.health:
             jumpster += i
+        print('Hint: Latin american countries...')
         print(jumpster)
+        print()
     
     def take_damage(self):
         '''Reduce heatlh, and return a game over Bool'''
