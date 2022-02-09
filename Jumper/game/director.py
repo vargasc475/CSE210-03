@@ -1,6 +1,6 @@
 from game.jumper import Jumper 
 from game.words import Words
-from game.GameState import gamestate
+from game.GameState import GameState
 
 class Director:
 
@@ -8,7 +8,7 @@ class Director:
 
         self._jumper = Jumper()
         self._words = Words()
-        self._state = gamestate()
+        self._state = GameState()
         self._words.make_word()
         self._state.set_word(self._words.word)
         self.is_playing = True
@@ -30,8 +30,10 @@ class Director:
         print("Good game!")
 
     def get_inputs(self):
-        '''while waiting for Cannon, 
-        Attribute (guess): letter to prove the panel.'''
+        '''Get inputs from the user.
+        
+        Attribute (guess): letter from the user to guess the world.'''
+
         self.guess = input("\nPick a letter:\n")
        
     def do_updates(self):

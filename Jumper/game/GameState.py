@@ -1,4 +1,4 @@
-class gamestate:
+class GameState:
     """A service that handles terminal operations.
     
     The responsibility of a gamestate is to store data for the game.
@@ -8,7 +8,7 @@ class gamestate:
         """Gets text input from the terminal. Directs the user with the given prompt.
 
         Args: 
-            self (gamestate): An instance of TerminalService.
+            self (gamestate): An instance of GameState.
             prompt (string): The prompt to display on the terminal.
 
         Returns:
