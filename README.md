@@ -18,8 +18,8 @@ root             (Project root folder)
 README.md        (General info)
 
 ## Authors 
-* Beatriz Sandoval
-* Canon Jensen
-* Christian Vargas
-* Samuel Gallew (sdancing971@gmail.com)
+* Beatriz Sandoval (tiz.sandoval@gmail.com)
+* Canon Jensen     (canonjensen@gmail.com)
+* Christian Vargas (vargasc475@gmail.com)
+* Samuel Gallew    (sdancing971@gmail.com)
 * Luis Lamas
