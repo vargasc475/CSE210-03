@@ -6,14 +6,15 @@ class Jumper:
         self.word = Words()
         self.word.make_word()
         self.health = [
-            "\n _____ ",
-            "\n/     \ ",
-            "\n\     /",
-            "\n \   /",
-            "\n   O",
+            "\n  ___ ",
+            "\n /■■■\ ",
+            "\n/■■■■■\ ",
+            "\n\■■■■■/",
+            "\n \■■■/",
+            "\n   ☺",
             "\n  /|\ ",
             "\n  / \ \n",
-            "^^^^^^^"
+            "  ^^^^^^^"
             ]
 
     def make_panel(self, word):
@@ -26,7 +27,7 @@ class Jumper:
         print(jumpster)
     
     def take_damage(self):
-        '''Reduce heatlh, and return a game over Bool'''
+        '''Reduce health, and return a game over Bool'''
         self.health.pop(0)
         out = len(self.health) > 4
         return out

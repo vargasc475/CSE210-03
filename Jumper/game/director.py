@@ -1,4 +1,6 @@
 
+import string
+from xml.dom.pulldom import CHARACTERS
 from game.jumper import Jumper 
 from game.words import Words
 from game.GameState import GameState
@@ -21,7 +23,7 @@ class Director:
         Args:
             self (Director): an instance of Director.
         """
-        print('CLue: Latin american countries...')
+        print('Clue: Latin american countries...')
         self.do_outputs()
         while self.is_playing:
         
@@ -36,7 +38,11 @@ class Director:
         
         Attribute (guess): letter from the user to guess the world.'''
 
-        self.guess = input("What letter do you guess? ")
+        self.guess = input("What letter do you guess? ").lower()[0]
+        while not self.guess.isalpha():
+            self.guess = input("Invalid Input. What letter do you guess? ")
+        else:
+            pass
        
     def do_updates(self):
         '''Update the panel with the guessed letter'''
