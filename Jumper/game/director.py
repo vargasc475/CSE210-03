@@ -1,6 +1,3 @@
-
-import string
-from xml.dom.pulldom import CHARACTERS
 from game.jumper import Jumper 
 from game.words import Words
 from game.GameState import GameState
